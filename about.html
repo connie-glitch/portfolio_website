@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+   <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+    <div id="top"></div>
+  <nav class="navbar">
+    <a href="index.html" id="name">Connie Zheng</a>
+    <!-- <a href="index.html">Index View</a> -->
+     <a href="index.html">Projects</a>
+    <a href="about.html">Info</a>
+  </nav>
+<main class="grid-page">
+  <section class="project-grid">
+    <p class="aboutbio"> Connie is a graphic designer passionate about publication design, participatory systems, and creative coding. She was previously a Senior Designer at Washingtonian Magazine, and is currently pursuing an MFA at Rhode Island School of Design.</p>
+  </section>
+  <section class="cv">
+    <div class ="cv-container">
+    <h2 class= "aboutheading">Awards and Recognition</h2>
+    <p class= "aboutbody">
+      <a href="https://www.slanted.de/product/slanted-experimental-type-4-0/" class="aboutbodyhover">Slanted Magazine Experimental Type 4.0</a>, 2026<br>
+      <a href="https://students.risd.edu/academic-support/graduate-studies/research-and-practice?_ga=2.93266974.2082649076.1784037648-869305729.1759423985&_gl=1*h1j0gp*_ga*ODY5MzA1NzI5LjE3NTk0MjM5ODU.*_ga_RX80Y9H9J2*czE3ODQwMzc2NTEkbzExOCRnMSR0MTc4NDAzNzY5NSRqMTYkbDAkaDA." class="aboutbodyhover">RISD Graduate Commons Grant Recipient</a>, 2026 <br>
+      <a href="https://www.spd.org/" class="aboutbodyhover">Society of Publishing Designers</a> Merit Award, 2025 <br>
+      <a href="https://citymag.org/awards/" class="aboutbodyhover">City Regional Magazine Awards Finalist</a>, 2025, 2023 <br>
+    </div>
+    <div class ="cv-container">
+    <h2 class="aboutheading">Contact</h2>
+    <a class="aboutbodyhover" href="mailto:czheng02@risd.edu">czheng02@risd.edu</a>
+    </div>
+  </section>
+</main>
+
+  <div id="image-modal" class="image-modal" aria-hidden="true">
+    <button class="image-modal__close" aria-label="Close image preview">×</button>
+    <button class="image-modal__nav image-modal__nav--prev" type="button" aria-label="View previous image">‹</button>
+    <img id="image-modal__img" src="" alt="Expanded view of the selected project image" />
+    <button class="image-modal__nav image-modal__nav--next" type="button" aria-label="View next image">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <footer class="footnote">
+    © Connie Zheng 2026
+  </footer>
+</body>
+</html>

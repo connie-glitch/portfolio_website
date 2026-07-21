@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chinroserie Grotesk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+ <div id="top"></div>
+</head>
+<body style="background-color: rgb(140, 211, 235);">
+  <nav class="navbar" style="background-color: rgb(140, 211, 235);">
+    <a href="index.html" id="name">Connie Zheng</a>
+    <!-- <a href="index.html">Index View</a> -->
+     <a href="index.html">Projects</a>
+    <a href="about.html">Info</a>
+  </nav>
+  <main class="project-layout">
+    <aside class="project-info">
+      <p class="projectyear">2025</p>
+      <h1>Chinroserie Grotesk</h1>
+      <p>
+        A project originated from researching patterns and porcelain objects from chinroserie, the Western imitation of Chinese ornamental styles. This design movement popularized racialized depction of 'Oriental' features and bodies. Responding to this, I created a pattern with  open source p5js code that exaggerates this existing precedent, in which the body parts of the 'oriental' woman literally fuses with ornaments to create grotesque forms. Rather than allowing the viewer to passivly admire the ornament, the pattern confronts them with the colonial implications of chinroseire. 
+      </p>
+
+      <!-- <div class="directory">
+             <a href="#project1" class="project project-1" >Chinroiserie Grotesk</a>
+                <a href="#project2" class="project project-2" >Open Sources</a>
+             <a href="#project3" class="project project-3">Myco Typeface</a>
+                <a href="#project4" class="project project-4">Pixel Quilt</a>
+                <a href="#project5" class="project project-5">Aesthetic Scarf</a>
+                 <a href="#project6" class="project project-6">Washingtonian Magazine</a>
+                  <a href="#project7" class="project project-7">Editorial Illustration</a>
+        </div>-->
+          <a href="project2.html" class="back-link">Next project</a>
+    </aside>
+
+    <section class="project-gallery" aria-label="Project images">
+        <img src="images/chinroserie_spreads.gif" alt="Animated spread showing the Chinroserie Grotesk pattern" class="gallery-image" />
+        <img src="images/chinroserie_p5js.gif" alt="P5.js sketch of the Chinroserie Grotesk ornament" class="gallery-image" />
+        <img src="images/chinroserie_letters.gif" alt="Letterform studies for Chinroserie Grotesk" class="gallery-image" />
+        <img src="images/chinroserie6.png" alt="Poster detail from the Chinroserie Grotesk project" class="gallery-image" />
+        <img src="images/chinroserie8.png" alt="Pattern detail from the Chinroserie Grotesk project" class="gallery-image" />
+        <img src="images/chinroserie1.png" alt="Typographic composition from Chinroserie Grotesk" class="gallery-image" />
+        <img src="images/chinroserie2.png" alt="Close-up of the Chinroserie Grotesk letterforms" class="gallery-image" />
+        <img src="images/chinroserie3.png" alt="Study of ornament and body forms in Chinroserie Grotesk" class="gallery-image" />
+        <img src="images/chinroserie4.png" alt="Graphic detail from the Chinroserie Grotesk poster" class="gallery-image" />
+        <img src="images/chinroserie5.png" alt="Experimental layout from the Chinroserie Grotesk project" class="gallery-image" />
+
+        <div class="directory directory-mobile">
+          <a href="#project1" class="project project-1" data-preview="images/chinroserie_thumbnail.png">Chinroiserie Grotesk</a>
+          <a href="#project2" class="project project-2" data-preview="images/opensources_thumbnail.png">Open Sources</a>
+          <a href="#project3" class="project project-3" data-preview="images/myco_thumbnail.gif">Myco Typeface</a>
+          <a href="#project4" class="project project-4" data-preview="images/quilt_thumbnail.jpg">Pixel Quilt</a>
+          <a href="#project5" class="project project-5" data-preview="images/scarf_thumbnail.jpg">Aesthetic Scarf</a>
+          <a href="#project6" class="project project-6" data-preview="images/washingtonian_thumbnail.jpg">Washingtonian Magazine</a>
+          <a href="#project7" class="project project-7" data-preview="images/illustration_thumbnail.jpg">Editorial Illustration</a>
+        </div>
+        <a href="#top" class="back-link">Back to Top</a>
+    </section>
+  </main>
+
+  <div id="image-modal" class="image-modal" aria-hidden="true">
+    <button class="image-modal__close" aria-label="Close image preview">×</button>
+    <button class="image-modal__nav image-modal__nav--prev" type="button" aria-label="View previous image">‹</button>
+    <img id="image-modal__img" src="" alt="Expanded view of the selected project image" />
+    <button class="image-modal__nav image-modal__nav--next" type="button" aria-label="View next image">›</button>
+  </div>
+
+  <script src="script.js"></script>
+  <footer class="footnote">
+    © Connie Zheng 2026
+  </footer>
+</body>
+</html>
