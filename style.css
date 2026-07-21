@@ -541,14 +541,14 @@ flex: 1;         /* Ensures all columns distribute width equally */
   }
 
   .grid-page {
-    padding-top: 10rem;
+    padding: 10rem 1rem 1rem 1rem;
   }
 
   .project-layout {
     grid-template-columns: 1fr;
     min-height: auto;
     gap: 0.25rem;
-    padding: 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem;
     padding-top: 8rem;
   }
 
