@@ -556,7 +556,7 @@ flex: 1;         /* Ensures all columns distribute width equally */
     font-size: 1rem;
     font-weight:400;
     line-height: 0.1;
-  transform: translateX(-5rem);
+  transform: translateX(-1rem);
 }
 
 .navbar a:not(#name):last-child {
