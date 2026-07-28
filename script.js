@@ -6,9 +6,13 @@ const closeButton = document.querySelector('.image-modal__close');
 const prevButton = document.querySelector('.image-modal__nav--prev');
 const nextButton = document.querySelector('.image-modal__nav--next');
 
+const isMobile = window.matchMedia('(max-width: 820px)').matches;
 const transitionOverlay = document.createElement('div');
 transitionOverlay.className = 'page-transition-overlay';
-document.body.appendChild(transitionOverlay);
+
+if (!isMobile) {
+  document.body.appendChild(transitionOverlay);
+}
 
 const showTransitionOverlay = () => {
   transitionOverlay.classList.add('is-active');
@@ -159,6 +163,18 @@ if (modal && modalImage) {
   });
 }
 
+const applyResponsiveImageLoading = () => {
+  document.querySelectorAll('img').forEach((img, index) => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', index < 2 ? 'eager' : 'lazy');
+    }
+
+    if (!img.hasAttribute('decoding')) {
+      img.setAttribute('decoding', 'async');
+    }
+  });
+};
+
 const initializeImageFadeIn = () => {
   const images = Array.from(document.querySelectorAll('img'));
   const cards = Array.from(document.querySelectorAll('.project-card'));
@@ -175,6 +191,11 @@ const initializeImageFadeIn = () => {
     card.classList.add('fade-card');
     card.style.setProperty('--fade-delay', `${index * 0.1 + 0.1}s`);
   });
+
+  if (isMobile) {
+    fadeTargets.forEach((target) => target.classList.add('is-visible'));
+    return;
+  }
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, observerInstance) => {
@@ -195,4 +216,7 @@ const initializeImageFadeIn = () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', initializeImageFadeIn);
+document.addEventListener('DOMContentLoaded', () => {
+  applyResponsiveImageLoading();
+  initializeImageFadeIn();
+});
